@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    font-weight: 400;
+    min-height: 100vh;
+    color: #333;
+    background-image: linear-gradient(to bottom left, #65f4cd 0%, #4799e9 100%);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    letter-spacing: 0.1rem;
+    text-transform: capitalize;
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+}
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.25rem;
+}
+h4 {
+    font-size: 0.875rem;
+}
+p {
+    margin-bottom: 1.25rem;
+    color: hsl(210, 22%, 49%);
+}
+@media screen and (min-width: 800px) {
+    h1 {
+        font-size: 4rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.75rem;
+    }
+    h4 {
+        font-size: 1rem;
+    }
+    body {
+        font-size: 1rem;
+    }
+    h1,
+    h2,
+    h3,
+    h4 {
+        line-height: 1;
+    }
+}
+/*  global classes */
+
+/* section */
+.section {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+@media screen and (min-width: 992px) {
+    .section {
+        width: 95vw;
+    }
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dob,
+.details,
+.profilePic {
+    width: 90vw;
+    max-width: 400px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem;
+    border: none;
+    outline: none;
+}
+
+label {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+#dob,
+#fullname,
+#pictureInput {
+    width: 50%;
+    padding: 0.2rem;
+}
+
+#submit {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #e0f2fe;
+    letter-spacing: 0.2ch;
+    background-color: #0ea5e9;
+    border: none;
+    border-radius: 0.3rem;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.08);
+
+    padding: 1rem 5rem;
+    margin: 0.5rem;
+}
+#submit:active {
+    transform: scale(0.98);
+}
+
+#heading {
+    color: #374151;
+    text-align: center;
+}
+
+.upcoming__container,
+.container {
+    width: 90vw;
+    margin: 0.5rem 0 1rem 0;
+    max-width: 450px;
+    background: #fff;
+    border-radius: 0.25rem;
+    padding: 1.5rem 2rem;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.upcoming__container h3,
+.container h3 {
+    font-weight: normal;
+    text-transform: none;
+    margin-bottom: 2rem;
+}
+
+.person {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+.person img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.person h4 {
+    margin-bottom: 0.35rem;
+}
+.person p {
+    margin-bottom: 0;
+}
+.person #days-left {
+    color: #22c55e;
+    margin-left: auto;
+    transform: translateY(-0.95rem);
+}

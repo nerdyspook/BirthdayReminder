@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="./style.css" />
+
+        <title>Birthday Reminder</title>
+    </head>
+    <body>
+        <main>
+            <h1>Birthday Reminder</h1>
+
+            <h2>Add a Birthday Reminder!</h2>
+
+            <div class="dob">
+                <label for="dob">Enter Birthdate:</label>
+                <input type="date" name="dateOfBirth" id="dob" />
+            </div>
+            <div class="details">
+                <label for="fullname">Enter Full Name:</label>
+                <input type="text" name="fullname" id="fullname" />
+            </div>
+
+            <div class="profilePic">
+                <label for="picture">Upload a Photo</label>
+                <input type="file" id="pictureInput" />
+            </div>
+
+            <button type="submit" id="submit">Submit</button>
+
+            <h1>Today</h1>
+            <div class="container">
+                <h2 id="heading"></h2>
+            </div>
+
+            <section class="container">
+                <h3 id="noOfBirthdays"></h3>
+                <div id="people"></div>
+            </section>
+
+            <h1>Upcoming</h1>
+            <section class="upcoming__container">
+                <h3 id="upcoming__noOfBirthdays"></h3>
+                <div id="upcoming__people"></div>
+            </section>
+        </main>
+        <script src="./main.js"></script>
+    </body>
+</html>
